@@ -1,0 +1,353 @@
+[
+    {
+      "id": 1,
+      "name": "bag-1",
+      "desc": "A stylish and durable bag with spacious compartments. Perfect for daily use or travel! 🎒✨",
+      "image": "bag-1",
+      "price": "500"
+    },
+    {
+      "id": 2,
+      "name": "bag-2",
+      "desc": "Elegant and sparkly clutch, perfect for special occasions—grab it now! ✨",
+      "image": "bag-2",
+      "price": "660"
+    },
+    {
+      "id": 3,
+      "name": "bag-3",
+      "desc": "A glamorous and stylish clutch, ideal for adding a touch of elegance to your outfit! ✨",
+      "image": "bag-3",
+      "price": "530"
+    },
+    {
+      "id": 4,
+      "name": "bag-4",
+      "desc": "Chic and dazzling clutch, perfect for parties and evening events! ✨",
+      "image": "bag-4",
+      "price": "570"
+    },
+    {
+      "id": 5,
+      "name": "bag-5",
+      "desc": "Stylish and durable bag, perfect for daily use with ample space for all your essentials.",
+      "image": "bag-5",
+      "price": "700"
+    },
+    {
+      "id": 6,
+      "name": "bag-6",
+      "desc": "Elegant and versatile bag, designed to complement any outfit while offering plenty of storage.",
+      "image": "bag-6",
+      "price": "640"
+    },
+    {
+      "id": 7,
+      "name": "bag-7",
+      "desc": "Chic and spacious bag, crafted with high-quality materials for a stylish and functional experience.",
+      "image": "bag-7",
+      "price": "550"
+    },
+    {
+      "id": 8,
+      "name": "bag-8",
+      "desc": "Trendy and practical bag, ideal for both work and leisure, with a sleek design and plenty of compartments.",
+      "image": "bag-8",
+      "price": "620"
+    },
+    {
+      "id": 9,
+      "name": "bag-9",
+      "desc": "Modern and stylish bag, designed for comfort and convenience with plenty of room for all your essentials.",
+      "image": "bag-9",
+      "price": "600"
+    },
+    {
+      "id": 10,
+      "name": "bag-10",
+      "desc": "Fashionable and roomy bag, perfect for everyday use with a sleek, high-quality design.",
+      "image": "bag-10",
+      "price": "580"
+    },
+    {
+      "id": 11,
+      "name": "collet-1",
+      "desc": "Fashionable and roomy bag, perfect for everyday use with a sleek, high-quality design.",
+      "image": "collet-1",
+      "price": "500"
+    },
+    {
+      "id": 12,
+      "name": "collet-2",
+      "desc": "A stylish and durable bag with spacious compartments and strong zippers. Perfect for daily use or travel! 🎒✨",
+      "image": "collet-2",
+      "price": "500"
+    },
+    {
+      "id": 13,
+      "name": "collet-3",
+      "desc": "A stylish and durable bag with spacious compartments and strong zippers. Perfect for daily use or travel! 🎒✨",
+      "image": "collet-3",
+      "price": "500"
+    },
+    {
+      "id": 14,
+      "name": "collet-4",
+      "desc": "A stylish and durable bag with spacious compartments and strong zippers. Perfect for daily use or travel! 🎒✨",
+      "image": "collet-4",
+      "price": "500"
+    },
+    {
+      "id": 15,
+      "name": "collet-5",
+      "desc": "A stylish and durable bag with spacious compartments and strong zippers. Perfect for daily use or travel! 🎒✨",
+      "image": "collet-5",
+      "price": "500"
+    },
+    {
+      "id": 16,
+      "name": "collet-6",
+      "desc": "A stylish and durable bag with spacious compartments and strong zippers. Perfect for daily use or travel! 🎒✨",
+      "image": "collet-6",
+      "price": "500"
+    },
+    {
+      "id": 17,
+      "name": "collet-7",
+      "desc": "A stylish and durable bag with spacious compartments and strong zippers. Perfect for daily use or travel! 🎒✨",
+      "image": "collet-7",
+      "price": "500"
+    },
+    {
+      "id": 18,
+      "name": "collet-8",
+      "desc": "A stylish and durable bag with spacious compartments and strong zippers. Perfect for daily use or travel! 🎒✨",
+      "image": "collet-8",
+      "price": "500"
+    },
+    {
+      "id": 19,
+      "name": "collet-9",
+      "desc": "A stylish and durable bag with spacious compartments and strong zippers. Perfect for daily use or travel! 🎒✨",
+      "image": "collet-9",
+      "price": "500"
+    },
+    {
+      "id": 20,
+      "name": "collet-10",
+      "desc": "A stylish and durable bag with spacious compartments and strong zippers. Perfect for daily use or travel! 🎒✨",
+      "image": "collet-10",
+      "price": "500"
+    },
+    {
+      "id": 21,
+      "name": "eyeshadow-1",
+      "desc": "A stylish and durable bag with spacious compartments and strong zippers. Perfect for daily use or travel! 🎒✨",
+      "image": "eyeshadow-1",
+      "price": "500"
+    },
+    {
+      "id": 22,
+      "name": "eyeshadow-2",
+      "desc": "A stylish and durable bag with spacious compartments and strong zippers. Perfect for daily use or travel! 🎒✨",
+      "image": "eyeshadow-2",
+      "price": "500"
+    },
+    {
+      "id": 23,
+      "name": "eyeshadow-3",
+      "desc": "A stylish and durable bag with spacious compartments and strong zippers. Perfect for daily use or travel! 🎒✨",
+      "image": "eyeshadow-3",
+      "price": "500"
+    },
+    {
+      "id": 24,
+      "name": "eyeshadow-4",
+      "desc": "A stylish and durable bag with spacious compartments and strong zippers. Perfect for daily use or travel! 🎒✨",
+      "image": "eyeshadow-4",
+      "price": "500"
+    },
+    {
+      "id": 25,
+      "name": "eyeshadow-5",
+      "desc": "A stylish and durable bag with spacious compartments and strong zippers. Perfect for daily use or travel! 🎒✨",
+      "image": "eyeshadow-5",
+      "price": "500"
+    },
+    {
+      "id": 26,
+      "name": "jewelry-1",
+      "desc": "A stylish and durable bag with spacious compartments and strong zippers. Perfect for daily use or travel! 🎒✨",
+      "image": "jewelry-1",
+      "price": "500"
+    },
+    {
+      "id": 27,
+      "name": "jewelry-2",
+      "desc": "A stylish and durable bag with spacious compartments and strong zippers. Perfect for daily use or travel! 🎒✨",
+      "image": "jewelry-2",
+      "price": "500"
+    },
+    {
+      "id": 28,
+      "name": "jewelry-3",
+      "desc": "A stylish and durable bag with spacious compartments and strong zippers. Perfect for daily use or travel! 🎒✨",
+      "image": "jewelry-3",
+      "price": "500"
+    },
+    {
+      "id": 29,
+      "name": "jewelry-4",
+      "desc": "A stylish and durable bag with spacious compartments and strong zippers. Perfect for daily use or travel! 🎒✨",
+      "image": "jewelry-4",
+      "price": "500"
+    },
+    {
+      "id": 30,
+      "name": "jewelry-5",
+      "desc": "A stylish and durable bag with spacious compartments and strong zippers. Perfect for daily use or travel! 🎒✨",
+      "image": "jewelry-5",
+      "price": "500"
+    },
+    {
+      "id": 31,
+      "name": "perfume-1",
+      "desc": "A stylish and durable bag with spacious compartments and strong zippers. Perfect for daily use or travel! 🎒✨",
+      "image": "perfume-1",
+      "price": "500"
+    },
+    {
+      "id": 32,
+      "name": "perfume-2",
+      "desc": "A stylish and durable bag with spacious compartments and strong zippers. Perfect for daily use or travel! 🎒✨",
+      "image": "perfume-2",
+      "price": "500"
+    },
+    {
+      "id": 33,
+      "name": "perfume-3",
+      "desc": "A stylish and durable bag with spacious compartments and strong zippers. Perfect for daily use or travel! 🎒✨",
+      "image": "perfume-3",
+      "price": "500"
+    },
+    {
+      "id": 34,
+      "name": "perfume-4",
+      "desc": "A stylish and durable bag with spacious compartments and strong zippers. Perfect for daily use or travel! 🎒✨",
+      "image": "perfume-4",
+      "price": "500"
+    },
+    {
+      "id": 35,
+      "name": "perfume-5",
+      "desc": "A stylish and durable bag with spacious compartments and strong zippers. Perfect for daily use or travel! 🎒✨",
+      "image": "perfume-5",
+      "price": "500"
+    },
+    {
+      "id": 36,
+      "name": "perfume-1",
+      "desc": "A stylish and durable bag with spacious compartments and strong zippers. Perfect for daily use or travel! 🎒✨",
+      "image": "perfume-1",
+      "price": "500"
+    },
+    {
+      "id": 37,
+      "name": "perfume-2",
+      "desc": "A stylish and durable bag with spacious compartments and strong zippers. Perfect for daily use or travel! 🎒✨",
+      "image": "perfume-2",
+      "price": "500"
+    },
+    {
+      "id": 38,
+      "name": "perfume-3",
+      "desc": "A stylish and durable bag with spacious compartments and strong zippers. Perfect for daily use or travel! 🎒✨",
+      "image": "perfume-3",
+      "price": "500"
+    },
+    {
+      "id": 39,
+      "name": "perfume-4",
+      "desc": "A stylish and durable bag with spacious compartments and strong zippers. Perfect for daily use or travel! 🎒✨",
+      "image": "perfume-4",
+      "price": "500"
+    },
+    {
+      "id": 40,
+      "name": "perfume-5",
+      "desc": "A stylish and durable bag with spacious compartments and strong zippers. Perfect for daily use or travel! 🎒✨",
+      "image": "perfume-5",
+      "price": "500"
+    },
+    {
+      "id": 41,
+      "name": "perfume-6",
+      "desc": "A stylish and durable bag with spacious compartments and strong zippers. Perfect for daily use or travel! 🎒✨",
+      "image": "perfume-6",
+      "price": "500"
+    },
+    {
+      "id": 42,
+      "name": "perfume-7",
+      "desc": "A stylish and durable bag with spacious compartments and strong zippers. Perfect for daily use or travel! 🎒✨",
+      "image": "perfume-7",
+      "price": "500"
+    },
+    {
+      "id": 43,
+      "name": "perfume-8",
+      "desc": "A stylish and durable bag with spacious compartments and strong zippers. Perfect for daily use or travel! 🎒✨",
+      "image": "perfume-8",
+      "price": "500"
+    },
+    {
+      "id": 44,
+      "name": "perfume-9",
+      "desc": "A stylish and durable bag with spacious compartments and strong zippers. Perfect for daily use or travel! 🎒✨",
+      "image": "perfume-9",
+      "price": "500"
+    },
+    {
+      "id": 45,
+      "name": "perfume-10",
+      "desc": "A stylish and durable bag with spacious compartments and strong zippers. Perfect for daily use or travel! 🎒✨",
+      "image": "perfume-10",
+      "price": "500"
+    },
+    {
+      "id": 46,
+      "name": "watch-1",
+      "desc": "A stylish and durable bag with spacious compartments and strong zippers. Perfect for daily use or travel! 🎒✨",
+      "image": "watch-1",
+      "price": "500"
+    },
+    {
+      "id": 47,
+      "name": "watch-2",
+      "desc": "A stylish and durable bag with spacious compartments and strong zippers. Perfect for daily use or travel! 🎒✨",
+      "image": "watch-2",
+      "price": "500"
+    },
+    {
+      "id": 48,
+      "name": "watch-3",
+      "desc": "A stylish and durable bag with spacious compartments and strong zippers. Perfect for daily use or travel! 🎒✨",
+      "image": "watch-3",
+      "price": "500"
+    },
+    {
+      "id": 49,
+      "name": "watch-4",
+      "desc": "A stylish and durable bag with spacious compartments and strong zippers. Perfect for daily use or travel! 🎒✨",
+      "image": "watch-4",
+      "price": "500"
+    },
+    {
+      "id": 50,
+      "name": "watch-5",
+      "desc": "A stylish and durable bag with spacious compartments and strong zippers. Perfect for daily use or travel! 🎒✨",
+      "image": "watch-5",
+      "price": "500"
+    }
+  ]
+  

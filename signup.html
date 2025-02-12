@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tailwind Framework -->
+    <link href="./dist/styles.css" rel="stylesheet" />
+    <!-- Main Style -->
+    <link rel="stylesheet" href="main.css" />
+    <!-- Google Fonts (Inter Font) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Main Script -->
+    <script src="./app.js" type="module" defer></script>
+    <script src="./auth.js" type="module" defer></script>
+    <title>Sign up</title>
+  </head>
+  <body id="app">
+    <div class="relative h-screen flex flex-row bg-[#E4E4E4]">
+      <div class="w-full lg:w-1/2 h-full">
+        <img
+          src="./images/signup.jpg"
+          alt="Signin Image"
+          class="w-full h-full hidden sm:block lg:hidden mix-blend-multiply"
+        />
+        <img
+          src="./images/signup-lg.jpg"
+          alt="Signin Image"
+          class="hidden w-full h-full lg:block"
+        />
+      </div>
+      <!-- Sign up form -->
+      <div
+        class="absolute flex justify-center items-center lg:static top-0 left-1/2 -translate-x-1/2 lg:translate-x-0 w-full h-full lg:w-1/2"
+      >
+        <h1 class="hidden">Infinity Accessories</h1>
+        <div
+          class="w-full sm:w-2/3 md:w-1/2 lg:w-3/4 mx-auto flex flex-col items-center justify-center px-4 lg:p-6 gap-2 lg:gap-4"
+        >
+          <div class="w-10 h-8 md:w-12 md:h-10 lg:w-20 lg:h-12">
+            <img src="./images/logo.png" alt="Logo Image"  class="object-contain"/>
+          </div>
+          <h2 class="text-lg sm:text-2xl text-center">Create your Account</h2>
+          <form
+            id="signup"
+            class="w-full *:w-full flex flex-col items-center gap-1 lg:gap-4"
+          >
+            <div>
+              <input
+                id="email"
+                type="email"
+                class="input w-full p-2 rounded outline-0 ring-2 ring-blue-600 focus:ring-blue-800 text-black mb-2"
+                placeholder="Enter your email"
+              />
+              <span class="error-message text-red-600"></span>
+            </div>
+            <div>
+              <input
+                id="password"
+                type="password"
+                class="input w-full p-2 rounded outline-0 ring-2 ring-blue-600 focus:ring-blue-800 text-black mb-2"
+                placeholder="Enter your password"
+              />
+              <span class="error-message text-red-600"></span>
+            </div>
+            <button
+              id="signin"
+              type="submit"
+              class="p-2 rounded border-none bg-blue-600 hover:bg-blue-800 text-white cursor-pointer"
+            >
+              Sign up
+            </button>
+          </form>
+          <div>
+            <span>Already have an account?</span
+            ><a href="./" class="text-blue-700"> Sign in</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
