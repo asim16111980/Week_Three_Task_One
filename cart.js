@@ -1,12 +1,46 @@
 // This is javascript file to handling cart page
 import Storage from "./Storage.js";
-import { Card } from "./Classes.js";
+import { Card, User, Cart } from "./Classes.js";
 
-// Get products count in cart
-let cartProductsCount = Storage.getItem("cart").length;
+// Function to get logedin user id
+const getCurrentUser = () => {
+  const users = Storage.getItem("users");
+  const logedinUser = users.filter((user) => {
+    return user.loginState === true;
+  });
+  return logedinUser[0];
+};
+const currentUser = getCurrentUser();
+
+// Function to get logedin user cart
+const getcurrentCart = () => {
+  const cart = Storage.getItem("usersCarts");
+  const currentCart = cart.filter((item) => {
+    return item.userID === currentUser.id;
+  });
+  return currentCart[0]?.products || [];
+};
+
+// Function to add product to current cart
+const removeFromCurrentCart = (productId) => {
+  const currentCart = getcurrentCart();
+  const newCart = currentCart.filter((product) => {
+    return product.id !== productId;
+  });
+  const updatedCart = new Cart(currentUser.id, newCart);
+  const usersCarts = Storage.getItem("usersCarts");
+  const newUsersCarts = usersCarts.filter((userCart) => {
+    return (userCart.userID !== currentUser.id);
+  });
+  const updatedUsersCarts = [...newUsersCarts, { ...updatedCart }];
+  Storage.updateItem("usersCarts", updatedUsersCarts);
+};
+// Get products count in current user cart
+let currentCartCount = getcurrentCart().length;
+
 // Function to render cart badge
 const renderCartBadge = () => {
-  const badge = `<span class="flex justify-center items-center w-3 h-3 bg-red-500 text-white text-[10px] rounded-full absolute -top-1 -right-1">${cartProductsCount}</span> </span
+  const badge = `<span class="flex justify-center items-center w-3 h-3 bg-red-500 text-white text-[10px] rounded-full absolute -top-1 -right-1">${currentCartCount}</span> </span
   >`;
   const cartBadge = document.querySelector("#cartBadge");
   cartBadge.innerHTML = badge;
@@ -36,7 +70,7 @@ if (body) {
             href="./cart.html"
             class="cursor-pointer text-lg font-bold text-blue-600 hover:text-blue-700 flex items-center gap-2"
             ><span class="relative"
-              ><i class="fa-solid fa-cart-shopping"></i><span id="cartBadge" ><span class="flex justify-center items-center w-3 h-3 bg-red-500 text-white text-[10px] rounded-full absolute -top-1 -right-1">${cartProductsCount}</span></span> </span
+              ><i class="fa-solid fa-cart-shopping"></i><span id="cartBadge" ><span class="flex justify-center items-center w-3 h-3 bg-red-500 text-white text-[10px] rounded-full absolute -top-1 -right-1">${currentCartCount}</span></span> </span
             ><span class="hidden sm:block">Cart</span></a
           >
         </li>
@@ -108,9 +142,10 @@ const productsParent = document.querySelector("#products");
 if (productsParent) {
   Card.parent = productsParent;
   // Function to loop on products data then create product card and add it in page
-  const addProducts = () => {
-    const cartProducts = Storage.getItem("cart");
-    [...cartProducts].forEach((product) => {
+  const addCards = () => {
+    // Check if product stored in localstorage
+    const currentCart = getcurrentCart();
+    [...currentCart].forEach((product) => {
       const { id, name, desc, image, price } = { ...product };
       const card = new Card(id, name, desc, image, price, "remove");
     });
@@ -119,23 +154,35 @@ if (productsParent) {
       const currentButton = e.target;
       const card = e.target.parentElement.parentElement;
       if (currentButton.matches(".remove-from-cart")) {
-        cartProductsCount--;
+        currentCartCount--;
         renderCartBadge();
         showSnackbar("Removed from shopping cart");
-        const Product = [...cartProducts].filter((product) => {
+        const Product = [...currentCart].filter((product) => {
           return product.id == card.id;
         });
-        Storage.delete("cart", Product[0].id);
+        removeFromCurrentCart(Product[0].id);
         card.remove();
       }
     });
   };
-  addProducts();
+  addCards();
 }
 
 // Handling signout click event
 const signoutButton = document.querySelector("#signout");
 signoutButton.addEventListener("click", () => {
+  const users = Storage.getItem("users");
+  const logedoutUser = new User(
+    currentUser.id,
+    currentUser.email,
+    currentUser.password,
+    false
+  );
+  const newUsers = users.filter((user) => {
+    return user.id !== currentUser.id;
+  });
+  const updatedUsers = [...newUsers, { ...logedoutUser }];
+  Storage.updateItem("users", updatedUsers);
   Storage.removeItem("auth");
   window.location.href = "./";
 });

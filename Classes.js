@@ -1,11 +1,13 @@
 // This file contains all classes that app needs it
 class User {
-  constructor(id, email, password) {
+  constructor(id, email, password, loginState = false) {
     this.id = id;
     this.email = email;
     this.password = password;
+    this.loginState = loginState;
   }
 }
+
 // Product class
 class Product {
   constructor(id, name, desc, image, price) {
@@ -14,6 +16,14 @@ class Product {
     this.desc = desc;
     this.image = image;
     this.price = price;
+  }
+}
+
+// Cart class
+class Cart {
+  constructor(userID, products) {
+    this.userID = userID;
+    this.products = products;
   }
 }
 // Card class
@@ -75,4 +85,4 @@ class Card {
   }
 }
 
-export { Product, Card };
+export { User, Product, Cart, Card };

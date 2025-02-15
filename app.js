@@ -1,4 +1,5 @@
 // This file is for handling app
+import { User } from "./Classes.js";
 import Storage from "./Storage.js";
 
 const Account = {
@@ -68,6 +69,7 @@ const Account = {
       const lastField = document.querySelector(`#${fields[fields.length - 1]}`);
       return Account.setError(lastField, "There are no registered users.");
     }
+    return true;
   },
   validateOnSignin: (form, fields) => {
     form.addEventListener("submit", (e) => {
@@ -82,8 +84,22 @@ const Account = {
         }
       });
       if (error == 0 && Account.validateUser(fields) !== false) {
+        const users = Storage.getItem("users");
+        const currentUser = users.filter((user) => {
+          return user.email === fieldsValue.email;
+        });
+        const logedinUser = new User(
+          currentUser[0].id,
+          currentUser[0].email,
+          currentUser[0].password,
+          true
+        );
+        const newUsers = users.filter((user) => {
+          return user.email !==fieldsValue.email;
+        })
+        const updatedUsers = [...newUsers, { ...logedinUser }];
+        Storage.updateItem("users", updatedUsers);
         localStorage.setItem("auth", 1);
-        window.history.replaceState("home.html", null, "home.html");
         window.location.href = "./home.html";
       }
     });
@@ -109,7 +125,6 @@ const Account = {
       }
     }
   },
-  //
   validateOnSignup: (form, fields) => {
     form.addEventListener("submit", (e) => {
       e.preventDefault();
@@ -127,7 +142,11 @@ const Account = {
       });
       if (error == 0) {
         const userId = Storage.getItem("users").length;
-        const newUser = { id: userId, ...fieldsValue };
+        const newUser = new User(
+          userId,
+          fieldsValue.email,
+          fieldsValue.password
+        );
         Storage.create("users", newUser);
         window.location.href = "./";
       }
