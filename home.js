@@ -19,7 +19,7 @@ const currentUser = getCurrentUser();
 const getcurrentCart = () => {
   const cart = Storage.getItem("usersCarts");
   const currentCart = cart.filter((item) => {
-    return item.userID === currentUser.id;
+    return item.userID == currentUser.id;
   });
   return currentCart[0]?.products||[];
 };
