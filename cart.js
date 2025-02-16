@@ -3,7 +3,10 @@ import Storage from "./Storage.js";
 import { Card, User, Cart } from "./Classes.js";
 
 const body = document.querySelector("#app");
-// Function to get logedin user id
+
+if (body) {
+  if (Storage.getItem("auth") == 1) {
+    // Function to get logedin user id
 const getCurrentUser = () => {
   const users = Storage.getItem("users");
   const logedinUser = users.filter((user) => {
@@ -47,8 +50,6 @@ const renderCartBadge = () => {
   cartBadge.innerHTML = badge;
 };
 
-if (body) {
-  if (Storage.getItem("auth") == 1) {
     body.innerHTML = `<div>
     <!-- Header -->
     <header
