@@ -62,7 +62,7 @@ const renderCartBadge = () => {
   cartBadge.innerHTML = badge;
 };
 if (body) {
-  if (Storage.getItem("auth") === 1) {
+  if (Storage.getItem("auth") == 1) {
     body.innerHTML = `<div>
     <!-- Header -->
     <header
