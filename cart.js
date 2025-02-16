@@ -111,23 +111,8 @@ if (body) {
     );
     currentLink.classList.replace("text-blue-600", "text-blue-950");
     currentLink.classList.remove("hover:text-blue-700");
-  } else {
-    body.innerHTML = `<div class="w-full h-screen flex flex-col justify-center items-center gap-3 px-4">
-    <h1 class="text-5xl sm:text-6xl md:text-7xl font-bold text-gray-950">401</h1>
-    <p class="text-base sm:text-xl md:text-2xl text-gray-600 text-center">
-      Unauthorized: Access is denied due to invalid credentials.
-    </p>
-    <a
-      href="./"
-      class="w-40 py-3 text-center text-sm sm:text-base text-white bg-gray-600  hover:bg-gray-800 rounded"
-      >Go Back</a
-    >
-  </div>
-  `;
-  }
-}
 
-// Function to show snackbar
+    // Function to show snackbar
 const snackbar = document.querySelector("#snackbar");
 const showSnackbar = (msg) => {
   snackbar.innerHTML = msg;
@@ -186,3 +171,19 @@ signoutButton.addEventListener("click", () => {
   Storage.removeItem("auth");
   window.location.href = "./";
 });
+
+  } else {
+    body.innerHTML = `<div class="w-full h-screen flex flex-col justify-center items-center gap-3 px-4">
+    <h1 class="text-5xl sm:text-6xl md:text-7xl font-bold text-gray-950">401</h1>
+    <p class="text-base sm:text-xl md:text-2xl text-gray-600 text-center">
+      Unauthorized: Access is denied due to invalid credentials.
+    </p>
+    <a
+      href="./"
+      class="w-40 py-3 text-center text-sm sm:text-base text-white bg-gray-600  hover:bg-gray-800 rounded"
+      >Go Back</a
+    >
+  </div>
+  `;
+  }
+}
