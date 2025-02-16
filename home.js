@@ -2,10 +2,10 @@
 import Storage from "./Storage.js";
 import { Product, Card, Cart, User } from "./Classes.js";
 
-// Validate authorization
 const body = document.querySelector("#app");
-
-// Function to get logedin user id
+if (body) {
+  if (Storage.getItem("auth") == 1) {
+    // Function to get logedin user id
 const getCurrentUser = () => {
   const users = Storage.getItem("users");
   const logedinUser = users.filter((user) => {
@@ -54,15 +54,13 @@ const removeFromCurrentCart = (productId) => {
 // Get products count in current user cart
 let currentCartCount = getcurrentCart().length;
 
-// Function to render cart badge
+    // Function to render cart badge
 const renderCartBadge = () => {
   const badge = `<span class="flex justify-center items-center w-3 h-3 bg-red-500 text-white text-[10px] rounded-full absolute -top-1 -right-1">${currentCartCount}</span> </span
   >`;
   const cartBadge = document.querySelector("#cartBadge");
   cartBadge.innerHTML = badge;
 };
-if (body) {
-  if (Storage.getItem("auth") == 1) {
     body.innerHTML = `<div>
     <!-- Header -->
     <header
